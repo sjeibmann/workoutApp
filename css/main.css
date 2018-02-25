@@ -2,10 +2,9 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
-}
-
-p{
   font-size: 12pt;
+  letter-spacing: 0.65;
+  font-weight: lighter;
 }
 
 .parentContainer{
@@ -18,6 +17,7 @@ p{
 
 .navigation{
   display: block;
+  visibility: visible;
   float: left;
   width: 5%;
   height: 100%;
@@ -27,6 +27,10 @@ p{
   display: inline-block;
   vertical-align: middle;
   width: 30px;
+}
+
+.navigation-mobile{
+  display: none;
 }
 
 .imageFull{
@@ -66,10 +70,46 @@ p{
   padding-top: 15px;
 }
 
-@@media only screen and (max-width:320px) {
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
   .parentContainer{
     position: relative;
-    width: 100%;
-    height: 100%;
+    max-width:100%;
+    margin: 0px;
   }
+
+  .navigation{
+    visibility: hidden;
+    display: none;
+  }
+
+  .navigation-mobile{
+    width: 100%;
+    display: block;
+    position: fixed;
+    visibility: visible;
+    bottom: 10px;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  .arrows-mobile {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  .arrows-mobile img{
+    display: block;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
