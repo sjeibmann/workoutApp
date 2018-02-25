@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script type="text/javascript" src="data/data.json"></script>
+  <script type="text/javascript" src="js/workout.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="load()">
+  <div class="parentContainer">
+    <div class="navigation" id="leftArrow" onclick="decrementData()">
+      <img src="img/leftArrow.svg">
+    </div>
+    <div class="content">
+      <div class="centerText header" id="titleField">Title</div>
+      <div class="centerText subhead" id="durationField">40x</div>
+      <div class="imageFull"><img id="imageField" src="img/filepath.png"></div>
+      <div class="centerText copy" id="bodyField"><p>body</p></div>
+    </div>
+    <div class="navigation" id="rightArrow" onclick="incrementData()">
+      <img src="img/rightArrow.svg">
+    </div>
+  </div>
+</body>
+</html>

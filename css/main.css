@@ -1,0 +1,67 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-size: 12pt;
+}
+
+.parentContainer{
+  position: relative;
+  min-width: 320px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation{
+  display: block;
+  float: left;
+  width: 5%;
+  height: 100%;
+}
+
+.navigation img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.imageFull{
+  width: 100%;
+}
+
+.imageFull img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.content{
+  display: block;
+  width: 90%;
+  float: left;
+}
+
+.centerText{
+  width: 100%;
+  text-align:center;
+}
+
+.header{
+  font-weight: bold;
+  font-size: 18pt;
+  padding-top: 15px;
+}
+
+.subhead{
+  font-weight: lighter;
+  font-size: 16pt;
+  padding-top: 15px;
+}
+
+.copy{
+  padding-top: 15px;
+}
