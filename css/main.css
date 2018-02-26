@@ -2,13 +2,13 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
-  font-size: 12pt;
+  font-size: 1em;
   letter-spacing: 0.65;
   font-weight: lighter;
 }
 
 .parentContainer{
-  position: relative;
+  /* position: relative; */
   min-width: 320px;
   max-width: 600px;
   margin-left: auto;
@@ -56,13 +56,13 @@ body{
 
 .header{
   font-weight: bold;
-  font-size: 18pt;
+  font-size: 2em;
   padding-top: 15px;
 }
 
 .subhead{
   font-weight: lighter;
-  font-size: 16pt;
+  font-size: 1.5em;
   padding-top: 15px;
 }
 
@@ -73,8 +73,7 @@ body{
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (-webkit-min-device-pixel-ratio: 2) {
 
   .parentContainer{
     position: relative;
@@ -97,6 +96,21 @@ body{
 
   .content{
     width: 100%;
+  }
+
+  .header{
+    font-size: 3.5em;
+  }
+
+  .subhead{
+    font-size: 3.2em;
+  }
+
+  .copy{
+    font-size: 2.75em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .arrows-mobile {
