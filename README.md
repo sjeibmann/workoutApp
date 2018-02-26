@@ -9,3 +9,4 @@ Work in progress using PDF content.
   - background? 
   - font styles?
 - Source better images
+- progress bar (dots, numbers, etc.?)
